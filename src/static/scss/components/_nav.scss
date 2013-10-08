@@ -1,6 +1,0 @@
-nav {
-    @include rem(padding-bottom, 16px);
-
-    border-bottom: solid $linkblue;
-    @include rem(border-bottom-width, 1px);
-}

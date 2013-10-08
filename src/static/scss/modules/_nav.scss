@@ -1,0 +1,32 @@
+nav {
+    position: relative;
+
+    @include rem(padding-bottom, 16px);
+
+    border-bottom: solid $linkblue;
+    @include rem(border-bottom-width, 1px);
+
+    .state {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+// State identifiers
+nav:before {
+    display: none;
+    content: 'small';
+}
+
+@include respond-min(800px) {
+    nav:before {
+        content: 'medium';
+    }
+}
+
+@include respond-min(1200px) {
+    nav:before {
+        content: 'large';
+    }
+}
